@@ -1,2 +1,3 @@
-# fence
-Show a 3d fence wireframe
+# Wireframe Lens
+
+[![See through a Wireframe Lens](./buz.png#center)]( https://youtu.be/4izSq5biAeo "Wireframe Lens")

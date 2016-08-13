@@ -1,4 +1,4 @@
 # Web Wireframe Lens
 
-[Play in YouTube.](https://youtu.be/4izSq5biAeo)
+[Try it !] (http://wireframe-lens.memoris.xyz/)
 ![](./Wireframe-lens.png#center)

@@ -11,7 +11,7 @@ jQuery(document).ready(function() {
   });
 });
 
-jQuery( window ).load(function() {
+jQuery(window).load(function() {
    $("[name='toggle-wireframe']").bootstrapSwitch();
    $('.control').show(600);
 });

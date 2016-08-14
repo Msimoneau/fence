@@ -19,6 +19,9 @@
 }
 
 /* Customized Bootstrap. */
+.bg-primary{
+   background-color: #505E7D;
+}
 .navbar a {
    color:white;
 }
@@ -31,10 +34,10 @@
 .navbar-brand a {
    font-size: 0.65em!important;
 }
-.bg-primary{
-   background-color: #505E7D;
-}
 .bootstrap-switch-handle-on {
    font-weight: bold;
    color:white!important;
+}
+.bootstrap-switch-handle-off{
+   font-weight: bold;
 }

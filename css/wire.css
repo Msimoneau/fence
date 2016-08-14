@@ -17,8 +17,19 @@
 .zoom {
    width:100%;
 }
+
+/* Bootstrap overwrite */
+.navbar a {
+   color:white;
+}
 .navbar-header a {
    color:white!important;
+}
+.navbar-brand {
+   font-size: 1.4em!important;
+}
+.navbar-brand a {
+   font-size: 0.65em!important;
 }
 .bg-primary{
    background-color: #505E7D;

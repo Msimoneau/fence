@@ -7,7 +7,8 @@
    width:100%;
    border:2px solid black;
 }
-.control-position {
+.control {
+   display:none;
    position:absolute;
    top:5px;
    left:5px;

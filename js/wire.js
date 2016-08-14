@@ -9,3 +9,7 @@ jQuery(document).ready(function() {
      }
   });
 });
+
+jQuery( window ).load(function() {
+   $('.control').show(600);
+});

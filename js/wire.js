@@ -16,6 +16,7 @@ jQuery(document).ready(function() {
    // Init Switches control
    $activationSwitch.bootstrapSwitch();
    $xraySwitch.bootstrapSwitch();
+   $xraySwitch.attr('state', false);
 
    // Get the x-ray image
    $xrayImage.load(function(){
@@ -26,6 +27,7 @@ jQuery(document).ready(function() {
 
    // X-ray control
    $xraySwitch.on('switchChange.bootstrapSwitch', function(event, state) {
+      $xraySwitch.attr('state', state);
       if (state){
          $xrayContainer.attr('data-magnify-src', xrayFile);
          $zoom = $('.zoom').magnify();
@@ -41,7 +43,7 @@ jQuery(document).ready(function() {
         if ($xrayImage.attr('data-loaded')){
            $xraySwitchContainer.css('visibility', 'visible');
         }
-        if ($xraySwitch.val() === 'on'){
+        if ($xraySwitch.attr('state') === 'true'){
             $xrayContainer.attr('data-magnify-src', xrayFile);
         }else{
             $xrayContainer.attr('data-magnify-src', wireTextureFile);

@@ -7,12 +7,16 @@
    width:100%;
    border:2px solid black;
 }
-.control {
-   display:none;
+.control-activation, .control-x-ray {
+   visibility:hidden;
    position:absolute;
    top:5px;
    left:5px;
    z-index:200;
+}
+.control-x-ray {
+   position:relative;
+   top:0;
 }
 .zoom {
    width:100%;

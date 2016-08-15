@@ -51,7 +51,7 @@
          <!-- Content -->
          <div>
             <div class="control-container">
-               <div class="control">
+               <div class="control-activation">
                   <input data-label-width="110"
                          data-animate="false"
                          data-label-text="Activate Lens"
@@ -60,10 +60,20 @@
                          data-on-color="#505E7D"
                          data-on-text="I"
                          data-off-text="0">
+                  <span class="control-x-ray">
+                     <input data-label-width="50"
+                            data-animate="false"
+                            data-label-text="X-ray"
+                            type="checkbox"
+                            name="toggle-x-ray"
+                            data-on-color="#505E7D"
+                            data-on-text="I"
+                            data-off-text="0">
+                  </span>
                </div>
-               <img src="images/fence-wireframe.jpg" width="0"><!-- Caching the wireframed image. -->
-               <img src="images/fence.jpg" class="zoom" data-magnify-src="images/fence-wireframe.jpg">
             </div>
+            <img src="images/fence-wireframe.jpg" width="0"><!-- Caching the wireframed image. -->
+            <img id="x-ray-id" src="images/fence.jpg" class="zoom" data-magnify-src="images/fence-wireframe.jpg">
          </div>
 
       </div>

@@ -2,10 +2,12 @@
    background-color: #2098D1;
    color:white!important;
 }
+.content-container {
+   border:2px solid black;
+}
 .control-container {
    position:relative;
    width:100%;
-   border:2px solid black;
 }
 .control-activation, .control-x-ray {
    visibility:hidden;

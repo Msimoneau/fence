@@ -13,7 +13,7 @@
           $xrayContainer = $('#x-ray-id');
           $activationSwitchContainer= $('.control-activation'),
           $activationSwitch = $("input[name='toggle-wireframe']"),
-          $activationSwitchText = $('.control-activation input .bootstrap-switch-label');
+          activationSwitchText = '.control-activation .bootstrap-switch-label';
 
       // Init Switches control
       $activationSwitch.bootstrapSwitch();
@@ -42,18 +42,18 @@
       // Activation control
       $activationSwitch.on('switchChange.bootstrapSwitch', function(event, state) {
         if (state){
-           if ($xrayImage.attr('data-loaded')){
-              $xraySwitchContainer.css('visibility', 'visible');
-           }
-           if ($xraySwitch.attr('state') === 'true'){
-               $xrayContainer.attr('data-magnify-src', xrayFile);
-           }else{
-               $xrayContainer.attr('data-magnify-src', wireTextureFile);
-           }
-           $zoom = $('.zoom').magnify();
-           $activationSwitchText.text('Deactivate Lens');
+            if ($xrayImage.attr('data-loaded')){
+               $xraySwitchContainer.css('visibility', 'visible');
+            }
+            if ($xraySwitch.attr('state') === 'true'){
+                $xrayContainer.attr('data-magnify-src', xrayFile);
+            }else{
+                $xrayContainer.attr('data-magnify-src', wireTextureFile);
+            }
+            $zoom = $('.zoom').magnify();
+            $(activationSwitchText).first().text('Deactivate Lens');
         }else{
-            $activationSwitchText.text('Activate Lens');
+            $(activationSwitchText).first().text('Activate Lens');
             $zoom.destroy();
             $xraySwitchContainer.css('visibility', 'hidden');
         }

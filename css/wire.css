@@ -27,6 +27,12 @@
 }
 
 /* Customized Bootstrap. */
+.container {
+   width:92%;
+}
+.container .container{
+   width:100%;
+}
 .bg-primary{
    background-color: #505E7D;
 }

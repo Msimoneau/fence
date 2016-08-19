@@ -30,6 +30,7 @@
 /* Customized Bootstrap. */
 .container {
    width:92%;
+   max-width:1280px;
 }
 .container .container{
    width:100%;
